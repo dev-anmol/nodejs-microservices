@@ -28,7 +28,7 @@ class AuthController {
                     email: email
                 }
             })
-            
+
             if (user) {
                 // check both password
                 //this condition inside if return true or false
@@ -55,6 +55,15 @@ class AuthController {
 
 
 
+
+
+    }
+
+    static async user(req, res) {
+        const user = req.user;
+
+
+        return res.status(200).json({ user: user })
 
 
     }
