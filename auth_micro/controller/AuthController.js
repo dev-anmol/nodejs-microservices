@@ -14,7 +14,7 @@ class AuthController {
             })
             return res.json({ message: "Account created successfully" })
         } catch (err) {
-            return res.status(500).json({msg:"Something went wrong!!!"})
+            return res.status(500).json({ msg: "Something went wrong!!!" })
         }
 
     }
