@@ -4,6 +4,6 @@ import postRoute from "./postRoutes.js"
 
 const router = Router();
 
-router.post("/api", postRoute)
+router.use("/api", postRoute)
 
 export default router
